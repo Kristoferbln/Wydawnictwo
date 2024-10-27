@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WYDAWNICTWO SZKOLNE</title>
+</head>
+<body>
+    
+    <style>
+        * {
+            font-family: 'Mina', sans-serif;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+        .naglowek {
+            background-image: url(wzorek.jpg);
+            width: 100%;
+            padding: 40px;
+        }
+        #stopka {
+            width: 100%;
+            font-size: 12px;
+            padding: 20px;
+            background-color: #0c7e96;
+            color: white;
+        }
+        #book {
+            background-image: url(book.png);
+            width: 20%;
+            background-color: black;
+            background: rgba(0, 0, 0, .1);
+            border: dotted;
+            border-color: #0c7e96;
+            border-radius: 100%;
+            position: relative;
+            background-position: center;
+            background-size: contain;
+        }
+        #books {
+            width: 100%;
+            height: auto;
+            background-image: url(books.jpg);
+            background-repeat: no-repeat;
+            border-radius: 5px;
+        }
+        .kontener {
+            display: flex;
+        }
+        .one {
+            flex: 0 1 20%;
+        }
+        #l1, #l2, #l3, #l4 {
+            font-weight: bold;
+            background-color: #0c7e96;
+            width: 100%;
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            padding: 10px;
+            border-bottom: solid 2px white; 
+        }
+        .two {
+            flex: 0 1 70%;
+            padding: 10px;
+            background-color: #ddd;
+
+        }
+        .three {
+            flex: 0 1 10%;
+            background-image: url(baner.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            border: dashed red 5px;
+        }
+        #h1{
+            border-bottom: solid 1px #aaa;
+        }
+        #p1, #p2, #p3, #p4 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #p1, #p2, #p3 {
+            text-indent: 20px;
+        }
+        #last {
+            background-color: #aaa;
+            border-left: solid 3px #333;
+            color: #333;
+            padding: 10px;
+            margin: 15px;
+            list-style-type: decimal-leading-zero;
+        }
+        #kon {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #face, #twit, #inst {
+            width: 100px;
+            height: 100px;
+            border-radius: 30px;
+            border-style: solid;
+            border-width: 10px;
+            margin: 20px;
+            margin-inline-start: 18%;
+        }
+        #face {
+            border-color: #2e467b;
+        }
+        #twit {
+            border-color: #197fc5;
+        }
+        #inst {
+            border-color: #ebebeb;
+        }
+    </style>
+
+    <div class="naglowek">
+       <center><img id="book" src="book.png"></center> 
+    </div>
+    <div class="kontener">
+        <div class="one">
+            <div id="l1">strona głowna</div>
+            <div id="l2">oferta</div>
+            <div id="l3">nasi partnerzy</div>
+            <div id="l4">dane kontaktowe</div>
+        </div>
+        <div class="two">
+            <img id="books" src="books.jpg">
+            <h1 id="h1">Witamy na stronie naszego wydawnictwa!</h1>
+            <h3>Zapraszamy do zapoznania się z naszą ofertą</h3>
+            <p id="p1">Nowelizacja ustawy o systemie oświaty spowodowała zmianę w dostępności obudowy metodycznej dla nauczycieli. Wydawcy publikacji edukacyjnych nie mogą przekazywać nauczycielom nieodpłatnych zestawów metodycznych.</p>
+            <p id="p2">W Księgarni Szkolnej oferujemy dodatkowo obudowę cenionych i popularnych serii do nauki języka angielskiego, francuskiego, łacińskiego, niemieckiego i rosyjskiego. Oferta dostępna jest do wyczerpania zapasów.</p>
+            <p id="p3">Przypominamy także, że w świetle obowiązujących przepisów prawa oświatowego organ prowadzący szkołę powinien zapewnić nauczycielom narzędzia pracy, w tym materiały dydaktyczne wymienione w realizowanym programie nauczania.</p>
+            <p id="p4"><b>Podstawa prawna:</b><br> Ustawa o zmianie ustawy o systemie oświaty i zmianie innych ustaw z dnia 30.05.2014r. (Dz.U. z 2014 r., poz.811)</p>
+            <div id="last">Art. 22d. 1. Zakazane jest:
+                <br><br>
+                <li>Oferowanie, obiecywanie lub udzielanie szkołom lub nauczycielom jakichkolwiek korzyści w sposób pośredni lub bezpośredni w zamian za dokonanie wyboru określonych podręczników, materiałów edukacyjnych lub materiałów ćwiczeniowych.</li>	
+                <li>Oferowanie sprzedaży podręcznika wyłącznie z innym podręcznikiem lub dodatkowymi materiałami dydaktycznymi przeznaczonymi dla ucznia.</li>
+                <br>
+            </div>
+            <div id="kon">
+            <img id="face" src="facebook.jpg">
+            <img id="twit" src="twitter.jpg">
+            <img id="inst" src="instagram.jpg">
+            </div>
+        </div>
+        <div class="three"></div>
+    </div>
+    <div id="stopka"><center>Autor strony: <b>Kacper Krzysztof</b></center></div>
+
+    <script>
+        var div=document.getElementById("l1");
+        div.onmouseover=function() {
+            div.style.backgroundColor="orange";
+            div.style.borderBottom = "dashed 2px white";
+        }
+        div.onmouseout=function() {
+            div.style.backgroundColor="#0c7e96";
+            div.style.borderBottom = "solid 2px white";
+        }
+
+        var div1=document.getElementById("l2");
+        div1.onmouseover=function() {
+            div1.style.backgroundColor="orange";
+            div1.style.borderBottom = "dashed 2px white";
+        }
+        div1.onmouseout=function() {
+            div1.style.backgroundColor="#0c7e96";
+            div1.style.borderBottom = "solid 2px white";
+        }
+
+        var div2=document.getElementById("l3");
+        div2.onmouseover=function() {
+            div2.style.backgroundColor="orange";
+            div2.style.borderBottom = "dashed 2px white";
+        }
+        div2.onmouseout=function() {
+            div2.style.backgroundColor="#0c7e96";
+            div2.style.borderBottom = "solid 2px white";
+        }
+
+        var div3=document.getElementById("l4");
+        div3.onmouseover=function() {
+            div3.style.backgroundColor="orange";
+            div3.style.borderBottom = "dashed 2px white";
+        }
+        div3.onmouseout=function() {
+            div3.style.backgroundColor="#0c7e96";
+            div3.style.borderBottom = "solid 2px white";
+        }
+    </script>
+
+</body>
+</html>
